@@ -1,0 +1,21 @@
+<form [formGroup]="changeform" (ngSubmit)="changename()" id="cf">
+        <div class="row">
+                    <div class="col-md-6"><label for="name">
+                        Vehicle Name:</label>
+                        <select id="name" class="form-control" formControlName="name" name="name"></select>
+                    </div>  
+                    <div class="col-md-6"><label for="nname">
+                            Vehicle New Name:</label>
+                            <input required id="nname" type="text" name="nname" formControlName="nname" class="form-control"/>
+                        </div>    
+                </div> 
+                <div class="row"> <div class="col-md-6"><label for="type">
+                        Modify Type:</label>
+                        <select id="type" class="form-control" formControlName="type" name="type">
+                        </select>
+                    </div></div>
+               <br>
+                                <div class="col-md-4">
+                                <button type="submit" class="btn btn-secondary form-control">Change</button>                                        
+                            </div>   
+                            </form>

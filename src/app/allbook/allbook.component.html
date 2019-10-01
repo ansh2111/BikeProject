@@ -1,0 +1,11 @@
+<div class="mybook">
+        <h1 align="center">All Bookings</h1>
+        <table class="table">
+            <tr><th>User Name</th><th>Rider Name</th><th>Vehicle Name</th><th>Pickup Location</th><th>Pickup Time</th><th>Dropoff Time</th><th>Amount</th><th></th></tr>
+            <tr *ngFor="let i of this.main1.bookings">
+                <td>{{i.user}}</td><td>{{i.rider|titlecase}}</td><td>{{i.vehicle}}</td>
+                <td>{{i.pickup|titlecase}}</td>
+                <td>{{i.pickuptime}}</td><td>{{i.dropofftime}}</td><td>{{i.amount|currency:'INR'}}</td>
+        </table>
+        <div id="total"></div>
+    </div>

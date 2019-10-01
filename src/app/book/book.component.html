@@ -1,0 +1,46 @@
+<div class="usrhome">
+<form [formGroup]="searchbikeform" (ngSubmit)="searchbike()" id="sbf">
+    <h1 align="center">Select Your Ride Details.</h1>
+<div class="form-row">
+        <div class="col-md-3"><label for="region">
+                Region:
+                <select id="region" name="region" formControlName="region" class="form-control">
+                </select>
+            </label>
+            
+            </div>
+<div class="col-md-3 "><label>
+    Pickup Date & Time:
+    <input [owlDateTimeTrigger]="dt1" [owlDateTime]="dt1" id="dt1" name="dt1" formControlName="dt1"
+           [(ngModel)]="selectedMoments"
+           [selectMode]="'rangeFrom'" [min]="minDate" class="form-control" >
+    <owl-date-time #dt1></owl-date-time></label>
+   
+</div>
+<div class="col-md-3">
+<label>    Dropoff Date & Time:
+    <input [owlDateTimeTrigger]="dt2" [owlDateTime]="dt2" id="dt2" name="dt2" formControlName="dt2"
+           [(ngModel)]="selectedMoments"
+           [selectMode]="'rangeTo'" [min]="minDate2" class="form-control">
+    <owl-date-time #dt2></owl-date-time>
+</label> 
+</div>
+<div class="col-md-2">
+    <br>
+    <button type="submit" class="btn btn-secondary form-control" >Search</button>
+</div>
+</div>
+</form>
+<div class="mybook">
+    <br><br><br><br>
+    <h1 align="center">Your Bookings</h1>
+    <table class="table">
+        <tr><th>Rider Name</th><th>Vehicle Name</th><th>Pickup Location</th><th>Pickup Time</th><th>Dropoff Time</th><th>Amount</th><th></th></tr>
+        <tr *ngFor="let i of this.ind">
+            <td>{{this.mybks[i].rider|titlecase}}</td><td>{{this.mybks[i].vehicle}}</td>
+            <td>{{this.mybks[i].pickup|titlecase}}</td>
+            <td>{{this.mybks[i].pickuptime}}</td><td>{{this.mybks[i].dropofftime}}</td><td>{{this.mybks[i].amount|currency:'INR'}}</td>
+        <button (click)='cancel(i)' class='btn btn-warning'>Cancel</button></tr>
+    </table>
+</div>
+</div>

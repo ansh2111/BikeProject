@@ -1,0 +1,13 @@
+.btn-group
+{
+    margin-left:280px;
+    width:800px;
+
+}
+.details{
+    background-image: url("./../../assets/images/back7.jpg");
+    background-size: cover;
+    height:600px;
+    color:white;
+    
+}

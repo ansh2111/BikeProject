@@ -1,0 +1,11 @@
+.btn-group
+{
+    margin-left:530px;
+    width:300px;
+}
+.comp{
+    background-image: url("./../../assets/images/back6.jpg");
+    background-size: cover;
+    height:600px;
+    width:1365px;
+}

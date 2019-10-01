@@ -1,0 +1,11 @@
+.form-row{
+    margin:0 auto;
+        
+}
+.usrhome{
+    background-image: url("./../../assets/images/back1.jpg") ;
+    height:586px;
+}
+label{
+    color:white;
+}

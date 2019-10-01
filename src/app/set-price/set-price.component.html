@@ -1,0 +1,32 @@
+<form [formGroup]="setpriceform" (ngSubmit)="setprice()" id="spf">
+        <div class="row">
+                    <div class="col-md-6"><label for="name">
+                        Vehicle Name:</label>
+                        <input id="name" class="form-control" formControlName="name" name="name"/>
+                    </div>  
+                    <div class="col-md-6"><label for="cost">
+                            Fixed Cost:</label>
+                            <input id="cost" type="text" name="cost" formControlName="cost" class="form-control"/>
+                        </div>    
+                </div> 
+                <div class="row">
+                        <div class="col-md-6"><label for="freekm">
+                                Free kms:</label>
+                                <input id="freekm" type="text" name="freekm" formControlName="freekm" class="form-control"/>
+                            </div>   
+                            <div class="col-md-6"><label for="extrakm">
+                                    Extra Kms Surplus:</label>
+                                    <input id="extrakm" type="text" name="extrakm" formControlName="extrakm" class="form-control"/>
+                                </div>      
+                        </div>  
+                        <div class="row">
+                                <div class="col-md-6"><label for="extrahrs">
+                                        Extra Half Hrs Surplus :</label>
+                                        <input id="extrakm" type="extrahrs" name="extrahrs" formControlName="extrahrs" class="form-control"/>
+                                    </div>  
+                        </div>
+                        <br>
+                                <div class="col-md-4">
+                                <button type="submit" class="btn btn-secondary form-control">Add</button>                                        
+                            </div>   
+                            </form>

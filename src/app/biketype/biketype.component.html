@@ -1,0 +1,33 @@
+<br>
+
+<div class="btn-group" role="group" aria-label="Basic example">
+    <a  class="btn btn-danger" (click)="show('Scooter')" >Scooter</a>
+    <a  class="btn btn-danger" (click)="show('Standard')">Standard Bikes</a>
+    <a  class="btn btn-danger" (click)="show('Sports')">Sports Bikes</a>
+    <a  class="btn btn-danger" (click)="show('Cruiser')">Cruiser</a>
+  </div>
+  <br>
+  <br>
+  <div id="bikeslist" *ngFor="let d of this.data;let j=index">
+    <div class='card col-md-8' style='margin:0 auto;' >
+      <h5 class='card-header col-md-12' align='center'>{{d.vname}}</h5>
+      <div class='card-body'>
+         <div class='row'>
+           <div class='col-md-5'>
+             <select class='form-control' id="{{j}}" (change)='choose(j)'>
+               <option>Choose Pickup Location:</option>
+               <option *ngFor="let l of d.loc;let i=index1">{{l}}</option>
+             </select>
+             <h6>Free: {{d.freek}} Kms</h6>
+             <h6>Excess Fee: {{d.extrak|currency:"INR"}}/Kms and {{d.extrah|currency:"INR"}}/Hrs</h6>
+             <h6>Total Cost: {{d.cost|currency:"INR"}}</h6>
+             <button class='btn btn-success' (click)="book(j)">BOOK NOW</button>
+             </div>
+             <div class='col-md-6'>
+              <img src="{{d.img}}" width=400px height=150px/>   
+            </div>
+           </div>
+          </div>
+    </div>
+  </div>
+  

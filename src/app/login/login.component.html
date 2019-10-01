@@ -1,0 +1,10 @@
+
+<form [formGroup]="loginform" (ngSubmit)="login()" id="lf">
+        <!-- <h4 id="title">LOGIN</h4> -->
+      <div class="form-group col-md-4-offset-2"><label for="uname"><b>Username</b></label>
+        <input class="form-control" type="text" name="uname" id="uname" formControlName="uname"/></div>
+        <div class="form-group col-md-4-offset-2"><label for="pass"><b>Password</b></label>
+          <input class="form-control" formControlName="pass" type="password" name="pass" id="pass"/></div>
+          <div class="form-group col-md-4-offset-2"><button type="submit" class="btn btn-secondary">Login</button></div>   
+  </form>
+

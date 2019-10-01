@@ -1,0 +1,55 @@
+<div class="details">
+<div class="container">
+
+        <div class="fixed">
+                <h1>VEHICLE DETAILS</h1>
+                <br>
+                <h4>Bike Name: {{this.vec}}</h4>
+                <h6>Pickup Location: {{this.pickup|titlecase}}, {{this.region|titlecase}}</h6>
+                Pickup Date/Time: {{this.d1}}<br>
+                Dropoff Date/Time: {{this.d2}}
+                <br>
+                Total Amount: {{this.amt|currency:'INR'}}
+                <br>Discount: {{this.disc|currency:'INR'}}   
+                <br>
+                <b>Net Amount: {{this.netamt|currency:'INR'}}</b>             <div id='amounts'></div>
+                <div id="invalid"></div> 
+            </div>
+<div class="flex-item">
+<form [formGroup]="riderform" (ngSubmit)="riderdet()" id="rf">
+        <h1>RIDER DETAILS</h1>
+        <br>
+           <div class="row">
+                       <div class="col-md-5"><label for="rname">
+                           Rider Name:</label>
+                           <input id="rname" class="form-control" formControlName="rname" name="rname"/>
+                       </div> 
+                       <div class="col-md-5"><label for="license">
+                               License Number:</label>
+                               <input id="license" class="form-control" formControlName="license" name="license"/>
+                           </div>   
+                   </div> 
+                           <div class="row">
+                                   <div class="col-md-5"><label for="promo">
+                                           Promo Code:</label>
+                                           <input id="promo" class="form-control" formControlName="promo" name="promo"/>
+                                       </div> 
+                                       <div class="col-md-2">
+                                           <label>&nbsp;</label>
+                                               <button *ngIf="this.disc==0" class="btn btn-info form-control" (click)='applycode()'>Apply</button>
+                                               <button *ngIf="this.disc!=0" class="btn btn-danger form-control" (click)='removecode()'>Remove</button>      
+                                                                                
+                                           </div>  
+                                   </div>  
+                                   <br>
+                                   <div class="col-md-4">
+                                   <button type="submit" class="btn btn-success form-control">FINISH BOOKING</button>                                        
+                               </div>   
+                               <br>
+                               
+                               </form> 
+                               </div>
+
+</div>
+
+</div>

@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    margin-left:220px;
+    
+}
+.fixed{
+    width: 400px;
+    margin-right:50px;
+}
+.flex-item{
+    flex-grow: 1;
+    width:600px;
+}
+.details{
+    background-image: url("./../../assets/images/back4.jpg");
+    background-size: cover;
+    height:600px;
+    color:;
+    
+}
+#invalid{
+color:red;
+}

@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    Rent2Ride
+  </a>
+  <button class="navbar-toggler" type="button">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav ml-auto" style="margin-right:50px">
+      <li class="nav-item" id="userhome" style="display:none;">
+          <a class="nav-link" routerLink="book" >Home</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link" id="defhome" routerLink="home">Home</a>
+      </li>  
+      
+      <!-- <li class="nav-item">
+        <a class="nav-link" routerLink="fleet-price">Fleet & Pricing</a>
+      </li> -->
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="offers">Offers</a>
+      </li>
+      <li class="nav-item" id="logid">
+        <a class="nav-link" routerLink="login-signup/login" >Login/Signup</a>
+      </li>
+      <li class="nav-item" id="profile" style="display:none;">
+          <a class="nav-link" routerLink="/editprofile" >My Profile</a>
+        </li>
+        <li class="nav-item" id="logout" style="display:none;" (click)="out()">
+            <a class="nav-link" routerLink="/home" >Logout</a>
+          </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about-us">About Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+<app-footer></app-footer>

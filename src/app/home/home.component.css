@@ -1,0 +1,14 @@
+.cara
+{
+    height:500px;
+
+}
+#carouselExampleIndicators{
+    width:1365px;
+    height:600px;
+    text-align: center;
+    border:50px solid darkgray;
+}
+body{
+    background-color: darkgray;
+}

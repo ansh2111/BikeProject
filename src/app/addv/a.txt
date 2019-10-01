@@ -1,0 +1,44 @@
+
+<!-- <div class="form-group">
+    <div class="row">
+            <div class="col-md-3"><label for="type">
+                    Type:</label>
+                    <select id="type" class="form-control">
+                    </select>
+                
+                </div>
+                <div class="col-md-3"><label for="name">
+                    Name:</label>
+                    <input id="name" class="form-control"/>
+                </div>   
+            </div>   
+            <div class="row">
+                <div class="col-md-3"><label for="region">
+                        Region:</label>
+                        <select id="region" class="form-control" (change)="disparea()">
+                        </select>
+                    
+                    </div>
+                    <div class="col-md-3"><label for="area">
+                        Area:</label>
+                        <select id="area" class="form-control">
+                            </select>
+                    </div>   
+                </div>
+                <div class="row">
+                    <div class="col-md-3"><label for="imageurl">
+                            Image Url:</label>
+                            <input id="imageurl" type="file" class="btn btn-primary"/>                       
+                        </div>
+                        <div class="col-md-3"><label for="count">
+                            Count:</label>
+                            <input id="count" type="text" class="form-control"/>
+                        </div>   
+                    </div>                      
+    <div class="col-md-2">
+        <br>
+        <button type="submit" class="btn btn-secondary form-control" (click)='addbike()'>Add</button>
+    </div>
+    
+    </div> -->
+    

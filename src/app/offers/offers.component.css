@@ -1,0 +1,23 @@
+.card-header{
+    text-align: center;
+    font-weight: bold;
+}
+.card{
+    width:800px;
+    margin:0 auto;
+}
+.card-text{
+    width:600px;
+    float:left;
+}
+.card-button{
+    float:right;
+    top:0;
+}
+.offers{
+    background-image: url("./../../assets/images/back5.jpg");
+    background-size: cover;
+    height:1050px;
+    color:;
+    
+}

@@ -1,0 +1,37 @@
+<form [formGroup]="removebikeform" (ngSubmit)="removebike()" id="rbf">
+        <div class="row">
+                <div class="col-md-6"><label for="type">
+                        Type:</label>
+                        <select id="type" class="form-control" formControlName="type" name="type">
+                        </select>
+                    
+                    </div>
+                    <div class="col-md-6"><label for="name">
+                        Name:</label>
+                        <input id="name" class="form-control" formControlName="name" name="name"/>
+                    </div>   
+                </div> 
+                <div class="row">
+                        <div class="col-md-6"><label for="region">
+                                Region:</label>
+                                <select id="region" class="form-control" name="region" formControlName="region" (change)="disparea()">
+                                </select>
+                            
+                            </div>
+                            <div class="col-md-6"><label for="area">
+                                Area:</label>
+                                <select id="area" name="area" formControlName="area" class="form-control">
+                                    </select>
+                            </div>   
+                        </div>  
+                        <div class="row">
+                                    <div class="col-md-6"><label for="count">
+                                        Count:</label>
+                                        <input id="count" type="text" name="count" formControlName="count" class="form-control"/>
+                                    </div>   
+                                </div>
+                                <br>  
+                                <div class="col-md-4">
+                                <button type="submit" class="btn btn-secondary form-control">Remove</button>                                        
+                            </div>   
+                            </form>

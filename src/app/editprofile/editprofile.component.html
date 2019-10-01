@@ -1,0 +1,16 @@
+<div class="comp">
+<form [formGroup]="editform" (ngSubmit)="change()" id="ef">
+        <div class="form-group col-md-4-offset-2"><label for="name"><b>Name</b></label>
+          <input class="form-control" type="text" name="name" id="name" formControlName="name" value="{{curuser.name}}"/></div>
+      <div class="form-group col-md-4-offset-2"><label for="uname"><b>Username</b></label>
+        <input class="form-control" type="text" name="uname" id="uname" formControlName="uname" value="{{curuser.username}}"/></div>
+        <div class="form-group col-md-4-offset-2"><label for="email"><b>Email</b></label>
+          <input class="form-control" formControlName="email" name="email" id="email" value="{{curuser.email}}"/></div>
+          <div class="form-group col-md-4-offset-2"><label for="mobile"><b>Mobile</b></label>
+            <input class="form-control" formControlName="mobile" name="mobile" id="mobile"  value="{{curuser.mobile}}"/></div>
+        <div class="form-group col-md-4-offset-2"><label for="pass"><b>Password</b></label>
+          <input class="form-control" formControlName="pass" name="pass" id="pass" type="password" value="{{curuser.getPass()}}"/></div>
+          <div class="form-group col-md-4-offset-2"><button type="submit" class="btn btn-secondary">Save Changes</button></div>   
+    </form>
+    
+  </div>
